@@ -1,0 +1,198 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.bodyfilms {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    max-height: 100dvh;
+    overflow-y: scroll;
+}
+
+.movieForm {
+    max-width: 48vw;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+
+}
+
+.modal {
+    display: none;
+    /* Ocultar por defecto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fondo semitransparente */
+    justify-content: center;
+    align-items: center;
+    /* Centrar el modal vertical y horizontalmente */
+    overflow: hidden;
+}
+
+/* Contenido del modal */
+.modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(100%);
+    /* Inicia desde abajo */
+    transition: transform 0.4s ease-in-out;
+    /* Transición suave */
+}
+
+/* Botón para cerrar */
+.close-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Botón para abrir */
+.open-btn {
+    padding: 10px 20px;
+    background: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Mostrar el modal con animación */
+.modal.show .modal-content {
+    transform: translateY(0);
+    /* Se posiciona en el centro */
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input,
+select,
+button {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ccc;
+}
+
+th,
+td {
+    padding: 10px;
+    height: auto;
+    text-align: left;
+    
+}
+.acciones{
+    display: flex;
+    flex-direction: row;
+    gap: 10px; 
+    justify-content: center; 
+    height : 200px;
+}
+img {
+    max-width: 100px;
+    height: auto;
+}
+
+.buscadorBox {
+    width: 50%;
+    position: relative;
+
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.buscadorBox input {
+    background-color: lightgray;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0%;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    padding-inline: 10px;
+}
+
+.buscadorBox button {
+    position: absolute;
+    right: 1%;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0px;
+    border-radius: 50%;
+}
+
+
+.buscadorBox button img {
+
+    height: 100%;
+}
+
+.table-head {
+    display: flex;
+    flex-direction: row;
+    padding-block: 20px;
+    width: 100%;
+}
+
+h2 {
+    width: 50%;
+    height: auto;
+    line-height: 30px;
+    margin: 0%;
+    padding: 0%;
+    font-size: 30px;
+}

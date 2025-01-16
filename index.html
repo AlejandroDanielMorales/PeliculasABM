@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Películas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <body>
+
+
+        <h1>Formulario de Registro de Películas</h1>
+        <form id="resource-bar" class="table-head">
+            <h2>Listado de Películas Registradas</h2>
+            <div class="buscadorBox">
+                <input id="prompt" name="title" type="text" placeholder="Buscar...">
+                 <button class="lupa" type="submit">
+                    <img src="lupa.png" alt="Buscar">
+                </button>
+            </div>
+        </form>
+        <div class="bodyfilms">
+            
+        
+        
+        <form id="movieForm" class="movieForm">
+            <label for="title">Título de la Película:</label>
+            <input type="text" id="title" name="title" required>
+    
+            <label for="image">Imagen (URL):</label>
+            <input type="url" id="image" name="image" required>
+    
+            <label for="genre">Género:</label>
+            <select id="genre" name="genre" required>
+                <option value="Action">Action</option>
+                <option value="Comedy">Comedy</option>
+                <option value="Drama">Drama</option>
+                <option value="Fiction">Ciencia Ficción</option>
+                <option value="Terror">Terror</option>
+            </select>
+    
+            <label for="releaseDate">Fecha de Estreno:</label>
+            <input type="date" id="releaseDate" name="releaseDate" required>
+    
+            <label for="rating">Valoración:</label>
+            <input type="range" id="rating" name="rating" min="1" max="10">
+    
+            <button type="submit" id = "btnForm">Registrar Película</button>
+        </form>
+
+        
+     
+
+    
+    <table id="movieTable">
+        <thead>
+            <tr>
+                <th>Título</th>
+                <th>Imagen</th>
+                <th>Género</th>
+                <th>Fecha de Estreno</th>
+                <th>Valoración
+                    <button class="ascBtn" style="height: 20px; width: 20px; background-color: brown;">Asc</button>
+                    <button class="descBtn" style="height: 20px; width: 20px; background-color: green;">Desc</button>
+                </th>
+                               
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+        </div>
+
+            <div class="modal" id="myModal">
+              <div class="modal-content">
+                <div class="modal-body">
+
+                </div>
+                <button class="close-btn">Cerrar</button>
+              </div>
+            </div>
+          
+        </tbody>
+    </table>
+<script src="scripts.js"></script>
+</body>
+</html>
