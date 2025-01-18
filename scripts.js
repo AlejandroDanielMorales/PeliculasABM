@@ -236,7 +236,7 @@ document.getElementById('resource-bar').addEventListener('input', function (even
     const searchText = document.getElementById('prompt').value.toLowerCase();
 
     const filteredMovies = movies.filter((movie) => {
-        movie.title.toLowerCase().includes(searchText) || movie.genre.toLowerCase().includes(searchText)
+        return movie.title.toLowerCase().includes(searchText) || movie.genre.toLowerCase().includes(searchText)
     }
     );
 
