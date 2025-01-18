@@ -74,8 +74,8 @@ document.getElementById('movieForm').addEventListener('submit', function (event)
             title: formData.title.value,
             image: formData.image.value,
             genre: formData.genre.value,
-            releaseDate: new Date(formData.releaseDate.value),
-            rating: formData.rating.value
+            date: new Date(formData.releaseDate.value),
+            score: formData.rating.value
         };
 
         movies.push(movie); // Agregar la nueva película al array
